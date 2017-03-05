@@ -1,0 +1,251 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    overflow-x: hidden;
+    background-color: white;
+    font: 18px/1.5em "Vollkorn";
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
+    sans-serif;
+    margin-bottom: 20px;
+}
+
+.navbar-default{
+    background-color: transparent;
+    border-bottom: hidden;
+}
+#img {
+     display: block;
+     margin: 0 auto;
+     border-radius: 150px;
+     border: 2px solid black;
+     height:180px;
+     width:185px
+ }
+#btn_container{
+    margin: auto;
+    text-align:match-parent;
+}
+#btn_container2{
+    margin-top: 30px;
+}
+.fa-github{
+    color: #6e5494;
+}
+.fa-linkedin{
+    color:#0077b5;
+}
+.fa-instagram{
+    color:#5851db;
+}
+.fa-twitter{
+    color:#1da1f2;
+}
+a{
+    color: black;
+}
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: red;
+}
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+}
+.navbar-default .navbar-nav>li>a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar-default .navbar-nav>li>a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: black;
+   }
+
+button{
+    outline: none;
+    border-radius: 360px;
+    background-color: white;
+}
+.btn-xs{
+    color: black;
+    border: solid 1px black;
+    background-color: white;
+}
+.btn-xs:hover{
+    background: #b3aca7;
+    box-shadow: none;
+}
+.thumbnail{
+    border:1px solid black;
+}
+.sm-links{
+    margin-left: 10px;
+}
+button:hover{
+    border-color: #737373;
+    color:darkgray;
+}
+.ng-enter, .ng-leave{
+    width:100%;
+    postion:absolute;
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.fade.ng-enter {
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    opacity: 1;
+}
+.fade.ng-leave-active {
+    opacity: 0;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height:20px;
+    background-color: transparent;
+}
+#form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+    text-align: match-parent;
+}
+input,#submit  {
+    font-size: 0.875em;
+    width: 470px !important;
+    height: 50px !important;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: black;
+    border: solid 1px black;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+input:hover {
+    background: #b3aca7;
+    color: white;
+}
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-size: 0.875em;
+    border: solid 1px black;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background: #b3aca7;
+    color: white;
+}
+.job{
+
+    font-size:larger;
+    border-bottom: 1px dashed black;
+}
+.job:hover{
+    color: darkred;
+    font-size:30px;
+    background: #5bc0de;
+}
+#submit {
+    border-bottom: solid 1px black;
+
+}
+
+#submit:hover {
+    background: #b3aca7;
+    color: white;
+}
+#thanks{
+    margin-top: 100px;
+}
+.lang,.fire{
+    font-weight: bold;
+    color: darkred;
+}
+
+@media (max-width: 480px){
+    #form {
+        width: 100px;
+        text-align: center;
+        margin-left: 15px;
+
+    }
+    #submit{
+        max-width: 270px;
+    }
+    input{
+        max-width: 270px;
+    }
+    textarea{
+        max-width: 270px;
+        max-height: 55px;
+    }
+    #thanks{
+        margin-top: 50px;
+    }
+    #img{
+        height:120px;
+        width:125px
+    }
+}

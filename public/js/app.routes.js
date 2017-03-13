@@ -20,6 +20,7 @@ angular.module('routerRoutes',['ngRoute'])
                 templateUrl : '/views/Thanks.html',
                 controller:'thanksController',
                 controllerAs:'thanks'
-            });
+            })
+            .otherwise({redirectTo:'/'});
         $locationProvider.html5Mode(true);
     });

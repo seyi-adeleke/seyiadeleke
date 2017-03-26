@@ -1,19 +1,16 @@
 <div class="container-fluid">
 <div class="row">
     <div class="col-md-6 col-md-offset-3 text-center lead">
-        <p class="text-center"> I'm always happy to bounce around ideas, talk about a Project or talk about anything in particular
-            You can reach me on my Social Media or preferably send me an email using the form below.<i class="fa fa-arrow-down"></i>
+        <p class="text-center"> I'm always happy to bounce around ideas, talk about a Project anything in particular.
+            You can reach me on my Social Media or preferably send me an email using the form below.
         </p>
         <form id="form" name="contactForm" ng-submit="contact.sendMail('/thanks')">
             <div class="input-group">
             <input id="name" type="text" placeholder="NAME" required ng-model="contact.contactName" >
             <input id="email" type="email" placeholder="E-MAIL" required ng-model="contact.contactEmail" >
             <input id="subject" type="text" placeholder="SUBJECT" required ng-model="contact.contactEmailSubject" >
-            <textarea id="message"  placeholder="MESSAGE" required ng-model="contact.contactMsg"></textarea>
+            <textarea id="message"  placeholder="YOUR MESSAGE" required ng-model="contact.contactMsg"></textarea>
             <button id="submit" type="submit"  class="btn btn-primary">
-            <span ng-show="contact.sendButtonText == 'Sending'">
-                 <i class="glyphicon glyphicon-refresh spinning"></i>
-            </span>
                 {{contact.sendButtonText}}
             </button>
             </div>

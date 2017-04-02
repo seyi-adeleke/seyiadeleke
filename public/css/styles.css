@@ -15,7 +15,7 @@ body{
     Cantarell,
     "Helvetica Neue",
     sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .navbar-default{
@@ -148,8 +148,10 @@ button:hover{
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height:20px;
+    height:10px;
     background-color: transparent;
+    border-top: 1px solid black;
+    text-align: left;
 }
 #form {
     position: relative;
@@ -226,9 +228,8 @@ textarea:hover {
 
 @media (max-width: 480px){
     #form {
-        width: 100px;
-        text-align: center;
-        margin-left: 15px;
+        width: 250px;
+        margin: 25px auto 50px auto;
 
     }
     #submit{

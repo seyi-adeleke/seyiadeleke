@@ -150,7 +150,7 @@ button:hover{
     /* Set the fixed height of the footer here */
     height:10px;
     background-color: transparent;
-    border-top: 1px solid black;
+    border-top: 1px solid white;
     text-align: left;
 }
 #form {

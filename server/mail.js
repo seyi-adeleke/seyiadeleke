@@ -3,7 +3,7 @@ var nodemailer = require('nodemailer');
 exports.sendMail = function(req,res){
     var data = req.body;
     var transporter = nodemailer.createTransport({
-        service: 'Gmail',
+        service: 'Yahoo',
         auth: {
             user: process.env.EMAIL,
             pass: process.env.password

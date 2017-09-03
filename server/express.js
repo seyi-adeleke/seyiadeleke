@@ -4,7 +4,7 @@ var bodyParser   = require('body-parser');
 var rootPath = path.normalize(__dirname + "/../" );
 
 var mail  = require('./mail');
-var port = process.env.PORT||80;
+var port = process.env.PORT||3000;
 
 module.exports = function(app){
     app.use(express.static(rootPath +'/public'));

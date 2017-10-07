@@ -2,6 +2,7 @@ var path = require('path');
 var express = require('express');
 var bodyParser   = require('body-parser');
 var rootPath = path.normalize(__dirname + "/../" );
+require('dotenv').config()
 
 var mail  = require('./mail');
 var port = process.env.PORT||3000;
@@ -13,7 +14,6 @@ module.exports = function(app){
     app.get('*',function(req,res){
         res.sendFile(path.join(rootPath + '/public/index.html'));
     });
-
     app.route('/contact-form').post(mail.sendMail);
     app.listen(port);
 
